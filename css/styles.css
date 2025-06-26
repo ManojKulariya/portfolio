@@ -532,7 +532,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -599,7 +599,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 58%;
   height: auto;
 }
 
@@ -8277,7 +8277,6 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {

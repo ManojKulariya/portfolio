@@ -53,7 +53,7 @@
                                     <!-- Hide captcha -->
                                     <input type="hidden" name="_captcha" value="false">
                                     <!-- Redirect after submission -->
-                                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                              <input type="hidden" name="_next" value="https://manojkulariya.github.io/portfolio/contact.html?submitted=true">
                                     
                                     <!-- Name input -->
                                     <div class="form-floating mb-3">
@@ -143,6 +143,25 @@
             }
         }, 3000);
     </script>
+    <script>
+  // Check if the form was submitted
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('submitted') === 'true') {
+    const alertBox = document.createElement('div');
+    alertBox.className = 'alert alert-success alert-dismissible fade show mt-4';
+    alertBox.setAttribute('role', 'alert');
+    alertBox.innerHTML = `
+      ✅ <strong>Thank you!</strong> Your message has been sent successfully.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    const form = document.querySelector("form");
+    form.parentNode.insertBefore(alertBox, form);
+
+    // Remove query string from URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+
     </body>
     
 </html>

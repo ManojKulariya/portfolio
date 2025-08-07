@@ -557,6 +557,12 @@ progress {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .custom-class {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 
 .list-unstyled {
   padding-left: 0;

@@ -2849,8 +2849,8 @@ textarea.form-control-lg {
   --bs-btn-bg: #f26822;
   --bs-btn-border-color: #f26822;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
-  --bs-btn-hover-border-color: #1826c2;
+  --bs-btn-hover-bg: #000;
+  --bs-btn-hover-border-color: #000;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #1826c2;
@@ -7866,7 +7866,7 @@ textarea.form-control-lg {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: 2rem !important;
 }
 
 .p-4 {
@@ -7874,7 +7874,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 2rem !important;
 }
 
 .px-0 {
@@ -11563,6 +11563,10 @@ html {
   background: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.icon {
+   background: #000;
+  -webkit-background-clip: text;
 }
 
 .rounded-4 {

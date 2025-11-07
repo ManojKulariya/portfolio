@@ -11742,3 +11742,150 @@ html {
     left: -2vw;
   }
 }
+
+
+/* --- Base Contact Section Styling --- */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for the overall section */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft shadow like your theme */
+    overflow: hidden; /* Important for border radius */
+}
+
+/* --- Left Column: Form Styling --- */
+.contact-form-side {
+    flex: 2; /* Takes more space than the info column */
+    padding: 60px 50px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon-box {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-form-side h2 {
+    font-size: 32px;
+    margin: 10px 0 5px 0;
+    color: #333; /* Dark text */
+}
+
+.contact-form-side p {
+    color: #6c757d; /* Lighter text for subheader */
+    margin: 0;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px; /* Space between side-by-side inputs */
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e9ecef; /* Light border */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF5733; /* Accent color on focus */
+    outline: none;
+}
+
+.contact-form textarea {
+    margin-bottom: 25px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e64a2a !important; /* Slightly darker shade on hover */
+}
+
+/* --- Right Column: Info Styling --- */
+.contact-info-side {
+    flex: 1; /* Takes less space */
+    background-color: #f7f7ff; /* Very light background for separation */
+    padding: 60px 40px;
+    color: #333;
+}
+
+.contact-info-side h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.info-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.info-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px 0 3px 0;
+    color: #333; /* Title text */
+}
+
+.info-item p {
+    margin: 0;
+    color: #6c757d; /* Detail text */
+    font-size: 15px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column; /* Stacks columns vertically on smaller screens */
+    }
+    .contact-form-side,
+    .contact-info-side {
+        padding: 40px 30px;
+    }
+    .form-group-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form-group-row input {
+        margin-bottom: 20px;
+    }
+}

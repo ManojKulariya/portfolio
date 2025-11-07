@@ -34,59 +34,63 @@
                     </div>
                 </div>
             </nav>
-
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+            <section class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-form-side">
+                        <div class="form-header">
+                            <div class="icon-box" style="color: #FF5733;">
+                                <i class="fas fa-envelope"></i> 
+                            </div>
+                            <h2>Get in touch</h2>
+                            <p>Let's work together!</p>
                         </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
 
-                            <form id="contactForm" method="POST" action="https://formsubmit.co/manojkulariya1@gmail.com">
-                                    <!-- Hide captcha -->
-                                    <input type="hidden" name="_captcha" value="false">
+                        <form action="https://formsubmit.co/manojkulariya1@gmail.com" id="contactForm" method="POST" class="contact-form">
+                            <input type="hidden" name="_captcha" value="false">
                                     <!-- Redirect after submission -->
                               <input type="hidden" name="_next" value="https://manojkulariya.github.io/portfolio/contact.html?submitted=true">
-                                    
-                                    <!-- Name input -->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
-                                        <label for="name">Full name</label>
-                                    </div>
-
-                                    <!-- Email input -->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
-                                        <label for="email">Email address</label>
-                                    </div>
-
-                                    <!-- Phone input -->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required />
-                                        <label for="phone">Phone number</label>
-                                    </div>
-
-                                    <!-- Message -->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-
-                                    <!-- Submit button -->
-                                    <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
-                                    </div>
-                                </form>
-
-
+                            <div class="form-group-row">
+                                <input type="text" placeholder="Full name *" required>
+                                <input type="email" placeholder="Email address *" required>
                             </div>
+                            <div class="form-group-row">
+                                <input type="text" placeholder="Subject *" required>
+                                <input type="tel" placeholder="Phone number (Optional)">
+                            </div>
+                            <textarea placeholder="Message *" rows="5" required></textarea>
+                            
+                            <button type="submit" class="submit-btn" style="background-color: #FF5733;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-side">
+                        <h3>Contact Information</h3>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt icon-accent" style="color: #FF5733;"></i>
+                            <p class="info-title">Primary Phone Number</p>
+                            <p>+91 (637) 608-2287</p>
                         </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope icon-accent" style="color: #FF5733;"></i>
+                            <p class="info-title">Support Email Address</p>
+                            <p>manojkulariya1@gmail.coom</p>
+                        </div>
+                        
+                        <!-- <div class="info-item">
+                            <i class="fas fa-map-marker-alt icon-accent" style="color: #FF5733;"></i>
+                            <p class="info-title">Physical Address</p>
+                            <p>123 Web Dev Street, City, Country</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock icon-accent" style="color: #FF5733;"></i>
+                            <p class="info-title">Operating Hours</p>
+                            <p>Monday - Friday: 9:00 AM – 6:00 PM</p>
+                        </div> -->
                     </div>
                 </div>
             </section>

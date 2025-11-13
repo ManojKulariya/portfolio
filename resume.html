@@ -22,165 +22,220 @@
         </head>    
             <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary"><img src="assets\logo\Manoj kulariya.png" alt="" width="190px"></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+           <header class="header-section">
+                <div class="header-bottom-area">
+                    <div class="container">
+                    <div class="header-menu-content">
+                        <nav class="navbar navbar-expand-xl p-0">
+                        <!-- LOGO -->
+                        <a class="site-logo" href="index.html">
+                            <img src="assets\logo\Manoj kulariya.png" alt="site-logo" width="140px">
+                        </a>
+
+                        <!-- TOGGLER -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                            <span class="fas fa-bars"></span>
+                        </button>
+
+                        <!-- NAV LINKS -->
+                        <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class="navbar-nav main-menu ms-auto">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="myservices.html">My Services</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                            <li><a href="projects.html">My project</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                            <!-- BUTTON -->
+                            <div class="header-action">
+                            <a href="contact.html" class="btn--base">Hire Me</a>
+                            </div>
+                        </div>
+                        </nav>
+                    </div>
                     </div>
                 </div>
-            </nav>
+                </header>
 
             <!-- Page Content-->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+
+        <section class="resume-download-section ptb-80">
+            <div class="container text-center">
+                <h3 class="resume-title">Download My Full Resume</h3>
+                <p class="resume-subtitle">Get a complete overview of my skills, experience, and education.</p>
+                
+                <a href="assets/resume/Manoj Kulariya Resume.pdf" 
+                download="Manoj_Kulariya_Resume.pdf" 
+                target="_blank"  class="btn btn-primary btn-lg resume-btn">
+                    Download Resume (PDF) <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </section>
+        <section class="experience-section ptb-80">
+                <div class="container">
+                    <div class="section-title text-center mb-50">
+                        <h2 class="title">Work Experience</h2>
+                        <p class="subtitle">A brief timeline of my professional journey.</p>
+                    </div>
+
+                    <div class="timeline">
+                        
+                    <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 17, 2025 – Present</div>
+                    <div class="timeline-content">
+                        <h4 class="company-title">Techtaru Digital, Jaipur (Raj) <span class="badge2">Current</span></h4>
+                        <p class="designation">Laravel Developer</p>
+                        <p class="description">Currently focused on developing dynamic web applications using PHP, Laravel, and managing WordPress project. Contributing to various aspects of full-stack development.</p>
+                    </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="assets/resume/Manoj Kulariya.pdf" download target="_blank">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">Feb-2025 - Present</div>
-                                                <div class="small fw-bolder">Laravel Developer</div>
-                                                <div class="small text-muted">UWS inc.</div>
-                                                <div class="small text-muted">Jaipur Rajsthan</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7"><div>Laravel Developer at UWS Inc. (Feb 2025 – Present) — Building web apps, APIs, and backend features using Laravel, with a focus on performance, security, and scalability.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">April-2024 - Feb-2025</div>
-                                                <div class="small fw-bolder">Laravel Developer</div>
-                                                <div class="small text-muted">D2 Code Lab Pvt.Ltd</div>
-                                                <div class="small text-muted">Ellenabad, Haryana</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7"><div>At D2 Code Lab Pvt. Ltd. (Apr 2024 – Feb 2025), I worked in a small team where I handled both frontend and backend development, building full-stack Laravel applications for client-focused projects.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2023 - </div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Vivekananda Global Univercity</div>
-                                                    <div class="small text-muted">jaipur, Rajsthan</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Bachlor's</div>
-                                                    <div class="small text-muted">BCA</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Pursuing a Bachelor's degree in Computer Applications (BCA) at Vivekananda Global University, Jaipur (2023 – Present), with a focus on web development, programming fundamentals, and database management. Actively building projects using PHP, Laravel, and modern web technologies alongside academic learning.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <!-- <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">RESTful API Development & Integration</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Authentication & Authorization </div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MVC Architecture & Route Management</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database Management</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">jQuery</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ajax</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 26, 2025 – July 15</div>
+                    <div class="timeline-content">
+                        <h4 class="company-title">UWS inc., Jaipur (Raj)</h4>
+                        <p class="designation">Laravel Developer</p>
+                        <p class="description">Worked extensively with PHP and the Laravel framework on robust application development project. Gained practical experience in designing and implementing backend services.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 2024 – Feb 15, 2025</div>
+                    <div class="timeline-content">
+                        <h4 class="company-title">D2 Code Lab PVT. LTD., Ellenabad (Haryana)</h4>
+                        <p class="designation">Laravel Developer</p>
+                        <p class="description">Started professional journey with PHP, Laravel, and CodeIgniter*. Focused on foundational web development skills and contributing to live projects.</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        <section class="education-section pb-80">
+            <div class="container">
+                <div class="section-title text-center mb-50">
+                    <h2 class="title">Education</h2>
+                </div>
+                <div class="education-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="details">
+                        <h4 class="degree">Bachelor of Computer Application (BCA)</h4>
+                        <p class="institute">Vivekananda Global University, Jaipur (Rajasthan)</p>
+                        <span class="year">Pursuing</span>
                     </div>
                 </div>
             </div>
+        </section>
+            <section class="circular-template">
+                <div class="container">
+                    <div class="circle-container">
+
+                    <!-- LEFT SIDE (static skills) -->
+                    <div class="side left">
+                        <a class="info-box box-1" href="#">
+                        <div class="icon"><p>1</p></div>
+                        <div class="text">
+                            <h4>HTML</h4>
+                            <p>Semantic markup & accessibility best practices.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-2" href="#">
+                        <div class="icon"><p>2</p></div>
+                        <div class="text">
+                            <h4>CSS / Bootstrap</h4>
+                            <p>Responsive layouts, utility-first & Bootstrap frameworks.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-3" href="#">
+                        <div class="icon"><p>3</p></div>
+                        <div class="text">
+                            <h4>JavaScript / jQuery</h4>
+                            <p>DOM manipulation, events, and jQuery plugins.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-4" href="#">
+                        <div class="icon"><p>4</p></div>
+                        <div class="text">
+                            <h4>AJAX</h4>
+                            <p>Asynchronous requests & dynamic content loading.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-5" href="#">
+                        <div class="icon"><p>5</p></div>
+                        <div class="text">
+                            <h4>PHP</h4>
+                            <p>Server-side scripting, processing forms and APIs.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <!-- CENTER CIRCLE -->
+                    <div class="center-circle">
+                        <h3>My Skills</h3>
+                        <div class="color-bars">
+                        <span class="bar purple"></span>
+                        <span class="bar yellow"></span>
+                        <span class="bar orange"></span>
+                        <span class="bar pink"></span>
+                        <span class="bar blue"></span>
+                        <span class="bar teal"></span>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE (static skills) -->
+                    <div class="side right">
+                        <a class="info-box box-right-1" href="#">
+                        <div class="icon"><p>6</p></div>
+                        <div class="text">
+                            <h4>MySQL</h4>
+                            <p>Database design, queries, and optimization.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-right-2" href="#">
+                        <div class="icon"><p>7</p></div>
+                        <div class="text">
+                            <h4>WordPress</h4>
+                            <p>Theme customization and plugin integration.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-right-3" href="#">
+                        <div class="icon"><p>8</p></div>
+                        <div class="text">
+                            <h4>Laravel</h4>
+                            <p>REST APIs, Eloquent ORM and Blade templating.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-right-4" href="#">
+                        <div class="icon"><p>9</p></div>
+                        <div class="text">
+                            <h4>Git</h4>
+                            <p>Version control, branching & pull request workflows.</p>
+                        </div>
+                        </a>
+
+                        <a class="info-box box-right-5" href="#">
+                        <div class="icon"><p>10</p></div>
+                        <div class="text">
+                            <h4>Mobile App (basic)</h4>
+                            <p>Understanding of mobile UX and app deployment basics.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    </div>
+                </div>
+                </section>
         </main>
         <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
@@ -195,32 +250,15 @@
 
 </footer>
 
-
 <!--JQuery-->  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--Floating WhatsApp css-->
-<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-<!--Floating WhatsApp javascript-->
-<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-
-
-<div id="WAButton"></div>
-<script>
-	$(function() {
-	  $('#WAButton').floatingWhatsApp({
-	    phone: '6376082287', //WhatsApp Business phone number International format-
-	    //Get it with Toky at https://toky.co/en/features/whatsapp.
-	    headerTitle: 'Chat with me on WhatsApp!', //Popup Title
-	    popupMessage: 'Hello, how can i help you?', //Popup Message
-	    showPopup: true, //Enables popup display
-	    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-	    //headerColor: 'crimson', //Custom header color
-	    //backgroundColor: 'crimson', //Custom background button color
-	    position: "right"    
-	  });
-});
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="WAButton"></div>
+    <script src="js/scripts.js"></script>
 
     </body>
 </html>

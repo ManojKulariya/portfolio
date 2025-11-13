@@ -15,25 +15,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         </head>    
                 <body class="d-flex flex-column">
         <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary"><img src="assets\logo\Manoj kulariya.png" alt="" width="190px"></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+           <header class="header-section">
+                <div class="header-bottom-area">
+                    <div class="container">
+                    <div class="header-menu-content">
+                        <nav class="navbar navbar-expand-xl p-0">
+                        <!-- LOGO -->
+                        <a class="site-logo" href="index.html">
+                            <img src="assets/logo/Manoj kulariya.png" alt="site-logo" width="140px">
+                        </a>
+
+                        <!-- TOGGLER -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                            <span class="fas fa-bars"></span>
+                        </button>
+
+                        <!-- NAV LINKS -->
+                        <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class="navbar-nav main-menu ms-auto">
+                            <!-- 'active' क्लास को अभी केवल Home पर रखें, JS इसे बाद में अपडेट करेगा -->
+                            <li><a href="index.html" class="active">Home</a></li> 
+                            <li><a href="myservices.html">My Services</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                            <li><a href="projects.html">My project</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                            <!-- BUTTON -->
+                            <div class="header-action">
+                            <a href="contact.html" class="btn--base">Hire Me</a>
+                            </div>
+                        </div>
+                        </nav>
+                    </div>
                     </div>
                 </div>
-            </nav>
+            </header>
             <section class="contact-section">
                 <div class="contact-container">
                     <div class="contact-form-side">
@@ -71,26 +96,30 @@
                         <div class="info-item">
                             <i class="fas fa-phone-alt icon-accent" style="color: #FF5733;"></i>
                             <p class="info-title">Primary Phone Number</p>
-                            <p>+91 (637) 608-2287</p>
+                             <a href="tel:+916376082287" class="text-3xl font-bold text-brand-base hover:text-primary-end transition duration-300 block">
+                                    +91 (637) 608-2287
+                                </a>
                         </div>
                         
                         <div class="info-item">
                             <i class="fas fa-envelope icon-accent" style="color: #FF5733;"></i>
                             <p class="info-title">Support Email Address</p>
-                            <p>manojkulariya1@gmail.coom</p>
+                            <a href="mailto:manojkulariya1@gmail.com" class="text-xl font-bold text-brand-base hover:text-primary-end transition duration-300 break-all block">
+                                    manojkulariya1@gmail.com
+                            </a>
                         </div>
                         
-                        <!-- <div class="info-item">
+                        <div class="info-item">
                             <i class="fas fa-map-marker-alt icon-accent" style="color: #FF5733;"></i>
                             <p class="info-title">Physical Address</p>
-                            <p>123 Web Dev Street, City, Country</p>
+                            <p>Hanumanghar, Rajasthan, India</p>
                         </div>
                         
                         <div class="info-item">
                             <i class="fas fa-clock icon-accent" style="color: #FF5733;"></i>
                             <p class="info-title">Operating Hours</p>
-                            <p>Monday - Friday: 9:00 AM – 6:00 PM</p>
-                        </div> -->
+                            <p>Monday - Saturday: 9:00 AM – 6:00 PM</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -108,62 +137,15 @@
 
 </footer>
 
-
-<!--JQuery-->  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--Floating WhatsApp css-->
-<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-<!--Floating WhatsApp javascript-->
-<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-
-
-<div id="WAButton"></div>
-<script>
-	$(function() {
-	  $('#WAButton').floatingWhatsApp({
-	    phone: '6376082287', //WhatsApp Business phone number International format-
-	    //Get it with Toky at https://toky.co/en/features/whatsapp.
-	    headerTitle: 'Chat with me on WhatsApp!', //Popup Title
-	    popupMessage: 'Hello, how can i help you?', //Popup Message
-	    showPopup: true, //Enables popup display
-	    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-	    //headerColor: 'crimson', //Custom header color
-	    //backgroundColor: 'crimson', //Custom background button color
-	    position: "right"    
-	  });
-});
-</script>
-
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        // Auto-dismiss alert after 3 seconds
-        setTimeout(() => {
-            const alert = document.getElementById('responseMessage');
-            if (alert) {
-                const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
-                bsAlert.close();
-            }
-        }, 3000);
-    </script>
-    <script>
-  // Check if the form was submitted
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('submitted') === 'true') {
-    const alertBox = document.createElement('div');
-    alertBox.className = 'alert alert-success alert-dismissible fade show mt-4';
-    alertBox.setAttribute('role', 'alert');
-    alertBox.innerHTML = `
-      <strong>Thank you!</strong> Your message has been sent successfully.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    `;
-    const form = document.querySelector("form");
-    form.parentNode.insertBefore(alertBox, form);
-
-    // Remove query string from URL
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-</script>
+ <!--JQuery-->  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Floating WhatsApp css-->
+        <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+        <!--Floating WhatsApp javascript-->
+        <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="WAButton"></div>
+        <script src="js/scripts.js"></script>
 
     </body>
     

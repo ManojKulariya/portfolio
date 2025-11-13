@@ -22,57 +22,121 @@
         </head>    
                <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0"> 
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary"><img src="assets\logo\Manoj kulariya.png" alt="" width="190px"></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+            <header class="header-section">
+                <div class="header-bottom-area">
+                    <div class="container">
+                    <div class="header-menu-content">
+                        <nav class="navbar navbar-expand-xl p-0">
+                        <!-- LOGO -->
+                        <a class="site-logo" href="index.html">
+                            <img src="assets\logo\Manoj kulariya.png" alt="site-logo" width="140px">
+                        </a>
+
+                        <!-- TOGGLER -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                            <span class="fas fa-bars"></span>
+                        </button>
+
+                        <!-- NAV LINKS -->
+                        <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class="navbar-nav main-menu ms-auto">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="resume.html">My Services</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="projects.html">My project</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                            <!-- BUTTON -->
+                            <div class="header-action">
+                            <a href="contact.html" class="btn--base">Hire Me</a>
+                            </div>
+                        </div>
+                        </nav>
+                    </div>
                     </div>
                 </div>
-            </nav>
+                </header>
 
             <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-10 col-xxl-10">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center p-5">
-                                        <div class="pr-2">
-                                            <h2 class="fw-bolder">Elswap.com 1</h2>
-                                            <p>Elswap is the first Buy-Sell-Trade platform for collectors, with 10+ categories and the lowest fees—no subscriptions, just simple, seamless trading, buying, and offers.</p>
-                                        </div>
-                                        <img class="img-fluid" src="assets/elswap.png" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center p-5">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Admin Panel</h2>
-                                            <p>The Elswap Admin Panel lets admins manage users, listings, categories, and transactions with full control and real-time insights across the platform.</p>
-                                        </div>
-                                        <img class="img-fluid" src="assets/adminpanel.png" alt="..." />
-                                    </div>
-                                </div>
+        <section class="my-projects-section ptb-80">
+            <div class="container">
+                <div class="section-title text-center mb-50">
+                    <h2 class="title">My Projects</h2>
+                    <p class="subtitle">Showcasing my latest work and technical expertise.</p>
+                </div>
+
+                <div class="projects-grid">
+                   <div class="project-card" data-project-id="1">
+                        <img src="assets\projectimg\medzy.png" alt="Medzy Health Screenshot" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Medzy Health: Healthcare Platform</h3>
+                            <p class="project-short-description">A full-stack, door-step healthcare service platform for booking tests and diagnostics.</p>
+                            <div class="project-techs-summary">
+                                <span class="tech-tag">PHP Laravel</span>
+                                <span class="tech-tag">Custom Design</span>
+                                <span class="tech-tag">MySQL</span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card" data-project-id="2">
+                        <img src="assets\projectimg\MSH.png" alt="MSH Path Labs Screenshot" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">MSH Path Labs: Smart Booking System</h3>
+                            <p class="project-short-description">Dynamic web app for booking health check-up packages with real-time price updates.</p>
+                            <div class="project-techs-summary">
+                                <span class="tech-tag">PHP Laravel</span>
+                                <span class="tech-tag">jQuery/AJAX</span>
+                                <span class="tech-tag">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project-id="3">
+                        <img src="assets\projectimg\authentic.png" alt="Authentic Jaipur Screenshot" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Authentic Jaipur: Corporate Site</h3>
+                            <p class="project-short-description">Professional corporate site for a medical device company with product verticals display.</p>
+                            <div class="project-techs-summary">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Responsive Design</span>
+                                <span class="tech-tag">Informational</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-project-id="4">
+                        <img src="assets\projectimg\rosium.png" alt="Rosium Developers" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Rosium Developers Portfolio</h3>
+                            <p class="project-short-description">A high-fidelity website showcasing luxury real estate developments.</p>
+                            <div class="project-techs-summary">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Design</span>
+                                <span class="tech-tag">Visual Builder</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <div id="projectModal" class="project-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modalProjectImage" src="" alt="Project Image" class="modal-image">
+                <div class="modal-body">
+                    <h3 id="modalProjectTitle" class="modal-title"></h3>
+                    <p id="modalProjectDescription" class="modal-description"></p>
+                    <div id="modalProjectTechs" class="modal-techs"></div>
+                    <div class="modal-links">
+                        <a id="modalLiveDemoBtn" href="#" target="_blank" class="btn btn-primary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a id="modalGithubBtn" href="#" target="_blank" class="btn btn-secondary">GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
             <!-- Call to action section-->
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
                 <div class="container px-5 my-5">
@@ -105,23 +169,15 @@
 <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 
 
-<div id="WAButton"></div>
-<script>
-	$(function() {
-	  $('#WAButton').floatingWhatsApp({
-	    phone: '6376082287', //WhatsApp Business phone number International format-
-	    //Get it with Toky at https://toky.co/en/features/whatsapp.
-	    headerTitle: 'Chat with me on WhatsApp!', //Popup Title
-	    popupMessage: 'Hello, how can i help you?', //Popup Message
-	    showPopup: true, //Enables popup display
-	    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-	    //headerColor: 'crimson', //Custom header color
-	    //backgroundColor: 'crimson', //Custom background button color
-	    position: "right"    
-	  });
-});
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!--JQuery-->  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Floating WhatsApp css-->
+        <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+        <!--Floating WhatsApp javascript-->
+        <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="WAButton"></div>
+        <script src="js/scripts.js"></script>
 
     </body>
 </html>

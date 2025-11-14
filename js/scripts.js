@@ -69,21 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 3000);
 
-//     const urlParams = new URLSearchParams(window.location.search);
-//   if (urlParams.get('submitted') === 'true') {
-//     const alertBox = document.createElement('div');
-//     alertBox.className = 'alert alert-success alert-dismissible fade show mt-4';
-//     alertBox.setAttribute('role', 'alert');
-//     alertBox.innerHTML = `
-//       <strong>Thank you!</strong> Your message has been sent successfully.
-//       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-//     `;
-//     const form = document.querySelector("form");
-//     form.parentNode.insertBefore(alertBox, form);
+    const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('submitted') === 'true') {
+    const alertBox = document.createElement('div');
+    alertBox.className = 'alert alert-success alert-dismissible fade show mt-4';
+    alertBox.setAttribute('role', 'alert');
+    alertBox.innerHTML = `
+      <strong>Thank you!</strong> Your message has been sent successfully.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    const form = document.querySelector("form");
+    form.parentNode.insertBefore(alertBox, form);
 
-//     // Remove query string from URL
-//     window.history.replaceState({}, document.title, window.location.pathname);
-//   }
+    // Remove query string from URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
 
 
 
@@ -251,51 +251,5 @@ document.addEventListener('DOMContentLoaded', () => {
             projectModal.classList.remove('active');
             document.body.style.overflow = '';
         }
-    });
-});
-
-
-
-document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-
-    const formData = {
-        full_name: this.full_name.value,
-        email: this.email.value,
-        subject: this.subject.value,
-        phone: this.phone.value,
-        message: this.message.value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbw_OH2LMqclJDkHUv6gAp6RxtHmDBS_YFEHizhltFsWEEu_w9NPxaQAuMEa1upUOKwQng/exec", {
-        method: "POST",
-        body: JSON.stringify(formData)
-    })
-    .then(res => res.text())
-    .then(data => {
-
-        const alertBox = document.createElement('div');
-        alertBox.className = 'alert alert-success alert-dismissible fade show mt-4';
-        alertBox.setAttribute('role', 'alert');
-        alertBox.innerHTML = `
-            <strong>Thank you!</strong> Your message has been sent successfully.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        `;
-
-        const form = document.querySelector("form");
-        form.parentNode.insertBefore(alertBox, form);
-
-        // Reset form
-        document.getElementById('contactForm').reset();
-
-        // Remove alert after 5 seconds automatically
-        setTimeout(() => {
-            alertBox.classList.remove("show");
-            alertBox.remove();
-        }, 5000);
-
-    })
-    .catch(err => {
-        alert("Error! Something went wrong.");
     });
 });

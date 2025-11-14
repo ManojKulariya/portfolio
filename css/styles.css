@@ -13058,7 +13058,7 @@ background: linear-gradient(135deg, #f26822 0%, #ffc8ab 100%);
 
 .about-me-image {
     max-width: 100%;
-    height: 500px;
+    height: 600px;
     border-radius: 10px; /* Slightly smaller radius than wrapper */
     display: block; /* Remove extra space below image */
 }

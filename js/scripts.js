@@ -253,3 +253,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    fetch("https://script.google.com/macros/s/AKfycbyKuiK7UxJj6WaODKMiJGU4nEF7aPMU52xyTaSpVBRUaVgvTmGv6GA-2reutrJ93qcCaA/exec", {
+        method: "POST",
+        body: JSON.stringify({
+            full_name: this.full_name.value,
+            email: this.email.value,
+            subject: this.subject.value,
+            phone: this.phone.value,
+            message: this.message.value
+        })
+    })
+    .then(res => res.text())
+    .then(data => {
+        // alert("Message sent successfully!");
+        // document.getElementById('contactForm').reset();
+    })
+    .catch(err => alert("Error! Something went wrong."));
+});
